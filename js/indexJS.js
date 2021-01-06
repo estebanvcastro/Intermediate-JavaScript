@@ -24,14 +24,21 @@ function loveCalculator(){
      * <   is lesser than
      * >=  is greater or equal to
      * <=  is lesser or equal to
+     * &&  AND
+     * ||  OR 
+     * !   NOT 
      */
     if (n > 80){
 
-        alert ("Yout love score is " + n + " %. You love each other no doubt.")
+        alert ("Your love score is " + n + " %. You love each other no doubt.")
 
-    }else{
+    }
+    if (n > 30 && n <= 80){
+        alert ("Your love score is " + n + " %.")
+    }
+    else{
 
-        alert ("Yout love score is " + n + " %. You need to do extra work there.")
+        alert ("Your love score is " + n + " %. You need to do extra work there.")
 
     }
 
