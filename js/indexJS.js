@@ -46,3 +46,54 @@ function loveCalculator(){
 }
 
 /*Collections: Working with arrays*/
+
+function validateGuestArray (){
+
+    /*This algorithm validates a specific name into a guest list*/
+
+    var guestList = ["Usher", "Palm","Drake","50 Cent", "Snoop Dog"]
+
+    var guest = prompt ("What is the guest name?");
+    
+    if (guestList.includes(guest)){
+        alert ("Welcome to the party " + guest);
+    }else{
+        alert ("Guest has not been found.");
+    }
+}
+
+
+
+function addToArray(){
+
+    var output = [];
+
+    //Add items to the array
+    output.push(1);
+    output.push(2);
+    output.push(3);
+
+    alert (output);
+}
+
+//Job application example
+//This algorithm increase the value of the array by 1 every time the function is executed
+var out = [];
+var count = 1;
+
+function fizzBuzz(){
+
+    if (count % 3 === 0 && count % 5 === 0 ){
+        out.push("Fizz Buzz");
+    }
+       
+    if (count % 3 === 0 ){
+        out.push("Fizz");
+    }else if (count % 5 === 0 ){
+        out.push("Bizz");
+    }else{
+        out.push(count);
+    }
+    count++;
+    alert (out);
+}
