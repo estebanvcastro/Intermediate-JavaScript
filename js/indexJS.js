@@ -97,3 +97,66 @@ function fizzBuzz(){
     count++;
     alert (out);
 }
+
+/*Who's buying lunch? Code Challenge: 133*/
+
+/*function whosPaying (names){
+    
+    var randomIndex = Math.floor(Math.random() * names.length);
+
+    var randomName = names [randomIndex];
+
+    return randomName + " is going to buy lunch today!";
+
+}*/
+
+/*While Loop: Solution to the 99 bottles Challenge, 135
+
+function beer(){
+    var numberOfBottles = 99;
+
+    while(numberOfBottles >= 0 ){
+
+        var bottleWord = "bottles";
+
+        if (numberOfBottles === 1){
+            bottleWord = "bottle";
+        }
+
+        prompt (numberOfBottles + " " + bottleWord + " of beer on the wall");
+        prompt (numberOfBottles + " " + bottleWord + " of beer,");
+        prompt ("Take one down, pass it around,");
+        numberOfBottles--
+        prompt (numberOfBottles + " " + bottleWord + " of beer on the wall"); 
+
+    }
+
+}*/
+
+/*Fibonacci Code Challenge*/
+function fibonacciGenerator (n) {
+    //Do NOT change any of the code above 👆
+        
+        //Write your code here:
+        var fibonacci = [];
+        if (n == 1 ){
+            fibonacci = [0];
+        }else if (n === 2){
+
+            fibonacci = [0,1];
+
+        }else{
+            fibonacci = [0,1];
+
+           for (var i = 2; i < n; i++){
+               fibonacci.push (fibonacci[fibonacci.length-2] + fibonacci[fibonacci.length-1]);
+           }
+        }
+        
+        alert (fibonacci);
+        
+        //Return an array of fibonacci numbers starting from 0.
+        
+    //Do NOT change any of the code below 👇
+    }
+    
